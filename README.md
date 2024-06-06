@@ -4,8 +4,9 @@ A simple GUI Java application for compressing video, leveraging ffmpeg and image
 ## Prerequisites
 
 1. FFMPEG
-2. A package manager to download FFMPEG (eg. Homebrew for macOS)
-3. Java openjdk18 or newer
+2. imagemagick
+3. A package manager to download FFMPEG and imagemagick (eg. Homebrew for macOS)
+4. Java openjdk18 or newer
 
 ## Installation
 
@@ -27,27 +28,27 @@ Once a package manager is installed,
 
 a. macOS
 
-`brew install ffmpeg`
+`brew install ffmpeg imagemagick`
 
 b. Linux 
 
-Just use FFMPEG via the CLI, jk
+Just use FFMPEG and imagemagick via the CLI, nerd! /s
 
 i. Ubuntu 
 
-`sudo apt-get -y ffmpeg`
+`sudo apt-get -y ffmpeg imagemagick`
 
 ii. RHEL
 
-`sudo yum install ffmpeg`
+`sudo yum install ffmpeg imagemagick`
 
 iii. Fedora
 
-`sudo dnf install -y ffmpeg`
+`sudo dnf install -y ffmpeg imagemagick`
 
 iv. Arch
 
-`sudo pacman -Syu ffmpeg`
+`sudo pacman -Syu ffmpeg imagemagick`
 
 ### 3. openjdk
 
