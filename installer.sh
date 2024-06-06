@@ -24,6 +24,10 @@ if [ "$OS" == "Darwin" ]; then
     brew install ffmpeg
 
     # Install openjdk@18 using Homebrew
+    echo "Installing imagemagick..."
+    brew install imagemagick
+
+    # Install openjdk@18 using Homebrew
     echo "Installing openjdk@21..."
     brew install openjdk@21
 
@@ -34,17 +38,17 @@ elif [ "$OS" == "Linux" ]; then
     if command_exists apt-get; then
         echo "apt-get detected."
         sudo apt-get update
-        sudo apt-get install -y ffmpeg openjdk-21-jdk
+        sudo apt-get install -y ffmpeg openjdk-21-jdk imagemagick
     elif command_exists yum; then
         echo "yum detected."
         sudo yum install -y epel-release
-        sudo yum install -y ffmpeg java-21-openjdk-devel
+        sudo yum install -y ffmpeg java-21-openjdk-devel imagemagick
     elif command_exists dnf; then
         echo "dnf detected."
-        sudo dnf install -y ffmpeg java-21-openjdk-devel
+        sudo dnf install -y ffmpeg java-21-openjdk-devel imagemagick
     elif command_exists pacman; then
         echo "pacman detected."
-        sudo pacman -Syu ffmpeg jdk-openjdk
+        sudo pacman -Syu ffmpeg jdk-openjdk imagemagick
     else
         echo "No supported package manager found. Please install ffmpeg and openjdk@18 manually."
         exit 1
