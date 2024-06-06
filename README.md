@@ -1,5 +1,5 @@
 # FFMPEGconv
-A simple GUI Java application for compressing video, leveraging FFMPEG open source library
+A simple GUI Java application for compressing video, leveraging ffmpeg and imagemagick open source library
 
 ## Prerequisites
 
